@@ -1,0 +1,20 @@
+{
+  "name": "luna-y-lomo-mysql-api",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:setup": "node --env-file-if-exists=.env scripts/setup-db.mjs",
+    "predev": "npm run db:setup",
+    "dev": "node --env-file-if-exists=.env --watch server.mjs",
+    "prestart": "npm run db:setup",
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "check": "node --check server.mjs && node --check scripts/setup-db.mjs"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "mysql2": "^3.14.3"
+  }
+}

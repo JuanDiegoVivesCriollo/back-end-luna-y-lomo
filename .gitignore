@@ -1,0 +1,33 @@
+# Dependencies
+/node_modules/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Tests and reports
+/coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime uploads
+/uploads/*
+!/uploads/.gitkeep
+!/uploads/products/
+/uploads/products/*
+!/uploads/products/bruma-calma.png
+!/uploads/products/bocados-raiz.png
+!/uploads/products/balsamo-nube.png
+!/uploads/products/kit-bienvenida.png
